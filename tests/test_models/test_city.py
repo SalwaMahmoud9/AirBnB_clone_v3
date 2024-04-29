@@ -14,14 +14,14 @@ class test_City(test_basemodel):
         self.name = "City"
         self.value = City
 
-    def  test_City_name(self):
+    def test_City_name(self):
         """ test_City """
         new = self.value()
         self.assertEqual(type(new.name), str if
                          os.getenv('HBNB_TYPE_STORAGE') != 'db' else
                          type(None))
 
-    def  test_City_state_id(self):
+    def test_City_state_id(self):
         """ test_City """
         new = self.value()
         self.assertEqual(type(new.state_id), str if
