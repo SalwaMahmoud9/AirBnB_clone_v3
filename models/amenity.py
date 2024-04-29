@@ -7,7 +7,6 @@ import models
 from models.base_model import Base, BaseModel
 
 
-
 class Amenity(BaseModel, Base):
     """amenity """
     if models.storage_t == 'db':

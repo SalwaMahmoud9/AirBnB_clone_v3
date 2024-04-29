@@ -45,6 +45,7 @@ def put_amenity(amenity_id):
     storage.save()
     return make_response(jsonify(amenity.to_dict()), 200)
 
+
 @app_views.route('/amenities', methods=['GET'], strict_slashes=False)
 @swag_from('documentation/amenity/all_amenities.yml')
 def get_amenities():
